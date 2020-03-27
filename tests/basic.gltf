@@ -36,11 +36,12 @@
             "extensions" : {
                 "MOZ_text" : {
                     "index" : 0,
+                    "type" : "SDF",
                     "alignX" : "center",
                     "alignY" : "top",
                     "offsetX" : 1.7999999523162842,
                     "offsetY" : 1.1999999284744263,
-                    "value" : "Esta es una pruebas",
+                    "value" : "Esto es una prueba",
                     "fontName" : "ArialMT",
                     "fontFile" : "Arial.ttf",
                     "size" : 1.2999999523162842,
@@ -64,6 +65,7 @@
             "extensions" : {
                 "MOZ_text" : {
                     "index" : 1,
+                    "type" : "GEOMETRY",
                     "alignX" : "left",
                     "alignY" : "top_baseline",
                     "offsetX" : 0,

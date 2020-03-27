@@ -40,6 +40,7 @@ class MOZTextProperties(bpy.types.PropertyGroup):
 def register():
     bpy.utils.register_class(MOZTextProperties)
     bpy.types.Scene.MOZTextProperties = bpy.props.PointerProperty(type=MOZTextProperties)
+    bpy.utils.register_class(AdditionalTextPropertiesPanel)
 
 def register_panel():
     # Register the panel on demand, we need to be sure to only register it once
@@ -59,6 +60,7 @@ def unregister_panel():
     # Since panel is registered on demand, it is possible it is not registered
     try:
         bpy.utils.unregister_class(GLTF_PT_UserExtensionPanel)
+        bpy.utils.unregister_class(AdditionalTextPropertiesPanel)
     except Exception:
         pass
 
@@ -116,6 +118,7 @@ class glTF2ExportUserExtension:
 
         ext_data = dict()
         ext_data['index'] = self.text_index
+        ext_data['type'] = blender_object.text_type.lower()
         ext_data['alignX'] = blender_object.data.align_x.lower()
         ext_data['alignY'] = blender_object.data.align_y.lower()
         ext_data['offsetX'] = blender_object.data.offset_x
@@ -139,3 +142,33 @@ class glTF2ExportUserExtension:
                 required = extension_is_required
             )
 
+text_type = (
+    ('TEXTURE', "Texture", "Text rendered on a texture"),
+    ('GEOMETRY', "Geometry", "Text rendered with a polygon mesh"),
+    ('SDF', "SDF", "Text rendered with a SDF shader")
+)
+
+bpy.types.Object.text_type = bpy.props.EnumProperty(
+    name = "Text Type",
+    description = "How this text should be rendered in realtime",
+    items = text_type,
+    default = 'SDF',
+)
+
+
+class AdditionalTextPropertiesPanel(bpy.types.Panel):
+    """Creates a Panel in the data properties window"""
+    bl_label = "MOZ_text extension"
+    bl_idname = "OBJECT_PT_moztextpanel"
+    bl_space_type = 'PROPERTIES'
+    bl_region_type = 'WINDOW'
+    bl_context = "data"
+
+    def draw(self, context):
+        layout = self.layout
+
+        obj = context.object
+        if type(obj.data).__name__ != 'TextCurve': return
+
+        row = layout.row()
+        row.prop(obj, "text_type")
