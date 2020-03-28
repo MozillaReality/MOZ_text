@@ -116,6 +116,9 @@ class glTF2ExportUserExtension:
         if not blender_object.type == 'FONT':
             return
 
+        # rotate text 90 deg to match three's orientation
+        # blender_object.rotation_euler.rotate_axis('X', 1.5707963267948966)
+
         ext_data = dict()
         ext_data['index'] = self.text_index
         ext_data['type'] = blender_object.text_type.lower()
@@ -127,7 +130,7 @@ class glTF2ExportUserExtension:
         ext_data['fontName'] = blender_object.data.font.name # postscript name
         ext_data['fontFile'] = blender_object.data.font.filepath.split(path.sep).pop()
         ext_data['size'] = blender_object.data.size
-        ext_data['letterSpacing'] = blender_object.data.space_character
+        ext_data['letterSpacing'] = blender_object.data.space_character - 1
         ext_data['lineSpacing'] = blender_object.data.space_line
         color = blender_object.active_material.node_tree.nodes["Principled BSDF"].inputs[0].default_value
         ext_data['color'] = [color[0], color[1], color[2]]

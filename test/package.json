@@ -1,0 +1,35 @@
+{
+  "name": "moz_text_test",
+  "version": "1.0.0",
+  "description": "test for MOZ_text glTF extension",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "webpack-dev-server -d --https --host 0.0.0.0",
+    "build": "webpack -p",
+    "watch": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {},
+  "keywords": [
+    "gltf",
+    "text",
+    "extension",
+    "threejs"
+  ],
+  "author": "Diego F. Goberna",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "babel-loader": "^8.1.0",
+    "three": "^0.115.0",
+    "troika-3d-text": "^0.20.0",
+    "webpack": "^4.42.1",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.11"
+  }
+}

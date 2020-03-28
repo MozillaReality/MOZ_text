@@ -1,0 +1,161 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.1.45",
+        "version" : "2.0"
+    },
+    "extensionsUsed" : [
+        "MOZ_text"
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "extensions" : {
+                "MOZ_text" : {
+                    "index" : 0,
+                    "type" : "sdf",
+                    "alignX" : "center",
+                    "alignY" : "center",
+                    "offsetX" : 0,
+                    "offsetY" : 0,
+                    "value" : "Lorem\nIPSUM",
+                    "fontName" : "Impact",
+                    "fontFile" : "Impact.ttf",
+                    "size" : 1.247999906539917,
+                    "letterSpacing" : 0.10000002384185791,
+                    "lineSpacing" : 0.7000000476837158,
+                    "color" : [
+                        0.8000000715255737,
+                        0.19215862452983856,
+                        0.17269723117351532
+                    ]
+                }
+            },
+            "name" : "Text",
+            "translation" : [
+                0,
+                0.3041502833366394,
+                0.09999999403953552
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Plane",
+            "rotation" : [
+                0.7071067690849304,
+                0,
+                0,
+                0.7071067690849304
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "Material.004",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.09817364811897278,
+                    0.529207170009613,
+                    0.8000000715255737,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Plane",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 30,
+            "max" : [
+                1.8382400274276733,
+                2.6929662055863446e-08,
+                1.8382400274276733
+            ],
+            "min" : [
+                -1.8382400274276733,
+                -1.0631378444259099e-08,
+                -1.8382400274276733
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 30,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 30,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 48,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 360,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 360,
+            "byteOffset" : 360
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 240,
+            "byteOffset" : 720
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 96,
+            "byteOffset" : 960
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1056,
+            "uri" : "data:application/octet-stream;base64,c0vrP0ylNrLm5He/c0vrPwAAAABzS+u/cnSVPwAAAABzS+u/cnSVP0ylNrLm5He/c0vrP/RS5zIo4+8+c0vrP0ylNrLm5He/cnSVP0ylNrLm5He/cnSVP/RS5zIn4+8+c0vrP/RS5zIo4+8+cnSVP/RS5zIn4+8+cnSVPwAAAABzS+s/c0vrPwAAAABzS+s/IMOYvwAAAABzS+s/IMOYv/RS5zIn4+8+c0vrv/RS5zIo4+8+c0vrvwAAAABzS+s/IMOYv/RS5zIn4+8+IMOYv0ylNrLm5He/c0vrv0ylNrLm5He/c0vrv/RS5zIo4+8+IMOYv0ylNrLm5He/IMOYvwAAAABzS+u/c0vrvwAAAABzS+u/c0vrv0ylNrLm5He/cnSVPwAAAABzS+s/cnSVP/RS5zIn4+8+IMOYv/RS5zIn4+8+IMOYvwAAAABzS+s/cnSVP0ylNrLm5He/cnSVPwAAAABzS+u/AAAAAP//fz/59VEyAAAAAP//fz/59VEyAAAAAP//fz/59VEyAAAAAP//fz/59VEyAAAAAP//fz+JjOCyAAAAAP//fz+JjOCyAAAAAP//fz+JjOCyAAAAAP//fz+JjOCyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD+KjOCyAAAAAAAAgD+KjOCyAAAAAAAAgD+KjOCyAAAAAAAAgD+KjOCyAAAAAAAAgD/59VEyAAAAAAAAgD/59VEyAAAAAAAAgD/59VEyAAAAAAAAgD/59VEyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD/59VEyAAAAAAAAgD/59VEyAACAP24Emz4AAIA/AAAAAN8faT8AAAAA3x9pP24Emz4AAIA/fFgCPwAAgD9uBJs+3x9pP24Emz7fH2k/fFgCPwAAgD98WAI/3x9pP3xYAj/fH2k/AACAPwAAgD8AAIA/RJyoPQAAgD9EnKg9fFgCPwAAAAB8WAI/AAAAAAAAgD9EnKg9fFgCP0ScqD1uBJs+AAAAAG4Emz4AAAAAfFgCP0ScqD1uBJs+RJyoPQAAAAAAAAAAAAAAAAAAAABuBJs+3x9pPwAAgD/fH2k/fFgCP0ScqD18WAI/RJyoPQAAgD/fH2k/bgSbPt8faT8AAAAAAAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACwAIAAoADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdABUAHAAVABQA"
+        }
+    ]
+}

@@ -3330,3 +3330,5 @@ THREE.GLTFLoader = ( function () {
 	return GLTFLoader;
 
 } )();
+
+export { GLTFLoader };
