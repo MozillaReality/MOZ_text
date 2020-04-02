@@ -1,5 +1,6 @@
 import bpy
 from os import path
+from bpy.app.handlers import persistent
 
 bl_info = {
     "name": "MOZ_text glTF Extension",
@@ -42,6 +43,8 @@ def register():
     bpy.types.Scene.MOZTextProperties = bpy.props.PointerProperty(type=MOZTextProperties)
     bpy.utils.register_class(AdditionalTextPropertiesPanel)
 
+    bpy.app.handlers.frame_change_pre.append(afterExport)
+
 def register_panel():
     # Register the panel on demand, we need to be sure to only register it once
     # This is necessary because the panel is a child of the extensions panel,
@@ -69,6 +72,8 @@ def unregister():
     unregister_panel()
     bpy.utils.unregister_class(MOZTextProperties)
     del bpy.types.Scene.MOZTextProperties
+
+    bpy.app.handlers.frame_change_pre.remove(afterExport)
 
 class GLTF_PT_UserExtensionPanel(bpy.types.Panel):
 
@@ -117,7 +122,9 @@ class glTF2ExportUserExtension:
             return
 
         # rotate text 90 deg to match three's orientation
-        # blender_object.rotation_euler.rotate_axis('X', 1.5707963267948966)
+        print("applying rotation " + str(blender_object.rotation_euler.x))
+        blender_object.rotation_euler.rotate_axis('X', -1.5707963267948966)
+        blender_object.undoGLTFExportRotation = True
 
         ext_data = dict()
         ext_data['index'] = self.text_index
@@ -175,3 +182,22 @@ class AdditionalTextPropertiesPanel(bpy.types.Panel):
 
         row = layout.row()
         row.prop(obj, "text_type")
+
+# undo rotations
+
+bpy.types.Object.undoGLTFExportRotation = bpy.props.BoolProperty(
+    name = "UndoRotation",
+    description = "whether undoing rotation made during glTF export is needed",
+    default = False
+)
+
+@persistent
+def afterExport(scene):
+  for obj in bpy.data.objects:
+    if not obj.type == 'FONT' or not obj.undoGLTFExportRotation: continue
+    print("rotation " + str(obj.rotation_euler.x))
+    obj.rotation_euler.rotate_axis('X', 1.5707963267948966)
+    obj.undoGLTFExportRotation = False
+    print("undo rotation " + str(obj.rotation_euler.x))
+    print("\n")
+

@@ -12,7 +12,9 @@
             "name" : "Scene",
             "nodes" : [
                 0,
-                1
+                1,
+                2,
+                3
             ]
         }
     ],
@@ -40,6 +42,12 @@
                 }
             },
             "name" : "Text",
+            "rotation" : [
+                0.7071067690849304,
+                0,
+                0,
+                0.7071067690849304
+            ],
             "translation" : [
                 0,
                 0.3041502833366394,
@@ -54,6 +62,76 @@
                 0,
                 0,
                 0.7071067690849304
+            ]
+        },
+        {
+            "extensions" : {
+                "MOZ_text" : {
+                    "index" : 1,
+                    "type" : "sdf",
+                    "alignX" : "center",
+                    "alignY" : "center",
+                    "offsetX" : 0,
+                    "offsetY" : 0,
+                    "value" : "Lorem\nIPSUM",
+                    "fontName" : "Georgia",
+                    "fontFile" : "Georgia.ttf",
+                    "size" : 1,
+                    "letterSpacing" : -0.10000002384185791,
+                    "lineSpacing" : 1.0000001192092896,
+                    "color" : [
+                        0.8000000715255737,
+                        0.19215862452983856,
+                        0.17269723117351532
+                    ]
+                }
+            },
+            "name" : "Text.001",
+            "rotation" : [
+                0.7071067690849304,
+                0,
+                0,
+                0.7071067690849304
+            ],
+            "translation" : [
+                0,
+                -1.3189244270324707,
+                0.09999999403953552
+            ]
+        },
+        {
+            "extensions" : {
+                "MOZ_text" : {
+                    "index" : 2,
+                    "type" : "sdf",
+                    "alignX" : "center",
+                    "alignY" : "center",
+                    "offsetX" : 0,
+                    "offsetY" : 0,
+                    "value" : "Lorem\nIPSUM",
+                    "fontName" : "ArialMT",
+                    "fontFile" : "Arial.ttf",
+                    "size" : 1,
+                    "letterSpacing" : 1.3999998569488525,
+                    "lineSpacing" : 0.5,
+                    "color" : [
+                        0.8000000715255737,
+                        0.19215862452983856,
+                        0.17269723117351532
+                    ]
+                }
+            },
+            "name" : "Text.002",
+            "rotation" : [
+                0.7071067690849304,
+                0,
+                0,
+                0.7071067690849304
+            ],
+            "translation" : [
+                0,
+                1.905092477798462,
+                0.09999999403953552
             ]
         }
     ],
@@ -98,29 +176,29 @@
         {
             "bufferView" : 0,
             "componentType" : 5126,
-            "count" : 30,
+            "count" : 32,
             "max" : [
                 1.8382400274276733,
-                2.6929662055863446e-08,
-                1.8382400274276733
+                1.040037602706434e-07,
+                3.601489782333374
             ],
             "min" : [
                 -1.8382400274276733,
-                -1.0631378444259099e-08,
-                -1.8382400274276733
+                -8.061077494403435e-08,
+                -3.4391820430755615
             ],
             "type" : "VEC3"
         },
         {
             "bufferView" : 1,
             "componentType" : 5126,
-            "count" : 30,
+            "count" : 32,
             "type" : "VEC3"
         },
         {
             "bufferView" : 2,
             "componentType" : 5126,
-            "count" : 30,
+            "count" : 32,
             "type" : "VEC2"
         },
         {
@@ -133,29 +211,29 @@
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 360,
+            "byteLength" : 384,
             "byteOffset" : 0
         },
         {
             "buffer" : 0,
-            "byteLength" : 360,
-            "byteOffset" : 360
+            "byteLength" : 384,
+            "byteOffset" : 384
         },
         {
             "buffer" : 0,
-            "byteLength" : 240,
-            "byteOffset" : 720
+            "byteLength" : 256,
+            "byteOffset" : 768
         },
         {
             "buffer" : 0,
             "byteLength" : 96,
-            "byteOffset" : 960
+            "byteOffset" : 1024
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 1056,
-            "uri" : "data:application/octet-stream;base64,c0vrP0ylNrLm5He/c0vrPwAAAABzS+u/cnSVPwAAAABzS+u/cnSVP0ylNrLm5He/c0vrP/RS5zIo4+8+c0vrP0ylNrLm5He/cnSVP0ylNrLm5He/cnSVP/RS5zIn4+8+c0vrP/RS5zIo4+8+cnSVP/RS5zIn4+8+cnSVPwAAAABzS+s/c0vrPwAAAABzS+s/IMOYvwAAAABzS+s/IMOYv/RS5zIn4+8+c0vrv/RS5zIo4+8+c0vrvwAAAABzS+s/IMOYv/RS5zIn4+8+IMOYv0ylNrLm5He/c0vrv0ylNrLm5He/c0vrv/RS5zIo4+8+IMOYv0ylNrLm5He/IMOYvwAAAABzS+u/c0vrvwAAAABzS+u/c0vrv0ylNrLm5He/cnSVPwAAAABzS+s/cnSVP/RS5zIn4+8+IMOYv/RS5zIn4+8+IMOYvwAAAABzS+s/cnSVP0ylNrLm5He/cnSVPwAAAABzS+u/AAAAAP//fz/59VEyAAAAAP//fz/59VEyAAAAAP//fz/59VEyAAAAAP//fz/59VEyAAAAAP//fz+JjOCyAAAAAP//fz+JjOCyAAAAAP//fz+JjOCyAAAAAP//fz+JjOCyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD+KjOCyAAAAAAAAgD+KjOCyAAAAAAAAgD+KjOCyAAAAAAAAgD+KjOCyAAAAAAAAgD/59VEyAAAAAAAAgD/59VEyAAAAAAAAgD/59VEyAAAAAAAAgD/59VEyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD+p4qgyAAAAAAAAgD/59VEyAAAAAAAAgD/59VEyAACAP24Emz4AAIA/AAAAAN8faT8AAAAA3x9pP24Emz4AAIA/fFgCPwAAgD9uBJs+3x9pP24Emz7fH2k/fFgCPwAAgD98WAI/3x9pP3xYAj/fH2k/AACAPwAAgD8AAIA/RJyoPQAAgD9EnKg9fFgCPwAAAAB8WAI/AAAAAAAAgD9EnKg9fFgCP0ScqD1uBJs+AAAAAG4Emz4AAAAAfFgCP0ScqD1uBJs+RJyoPQAAAAAAAAAAAAAAAAAAAABuBJs+3x9pPwAAgD/fH2k/fFgCP0ScqD18WAI/RJyoPQAAgD/fH2k/bgSbPt8faT8AAAAAAAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACwAIAAoADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdABUAHAAVABQA"
+            "byteLength" : 1120,
+            "uri" : "data:application/octet-stream;base64,c0vrPz4crbMPbyTAc0vrP5VHlrOPG1zAcnSVP5VHlrOPG1zAcnSVPz4crbMPbyTAc0vrP6xY3zN61Q5Ac0vrPz4crbMPbyTAcnSVPz4crbMPbyTAcnSVP6xY3zN61Q5Ac0vrP++DpTPPfmZAc0vrP6xY3zN61Q5AcnSVP6xY3zN61Q5AcnSVP++DpTPPfmZAIMOYv++DpTPPfmZAIMOYv6xY3zN61Q5Ac0vrv6xY3zN61Q5Ac0vrv++DpTPPfmZAIMOYv6xY3zN61Q5AIMOYvz4crbMPbyTAc0vrvz4crbMPbyTAc0vrv6xY3zN61Q5AIMOYvz4crbMPbyTAIMOYv5VHlrOPG1zAc0vrv5VHlrOPG1zAc0vrvz4crbMPbyTAcnSVP++DpTPPfmZAcnSVP6xY3zN61Q5AIMOYv6xY3zN61Q5AIMOYv++DpTPPfmZAcnSVPz4crbMPbyTAcnSVP5VHlrOPG1zAIMOYv5VHlrOPG1zAIMOYvz4crbMPbyTAAAAAAP//fz/19VEyAAAAAP//fz/19VEyAAAAAP//fz/19VEyAAAAAP//fz/19VEyAAAAAAAAgD9lJyWzAAAAAAAAgD9lJyWzAAAAAAAAgD9lJyWzAAAAAAAAgD9lJyWzAAAAAP//fz+o4qgyAAAAAP//fz+o4qgyAAAAAP//fz+o4qgyAAAAAP//fz+o4qgyAAAAAP//fz+n4qgyAAAAAP//fz+n4qgyAAAAAP//fz+n4qgyAAAAAP//fz+n4qgyAAAAAP//fz9lJyWzAAAAAP//fz9lJyWzAAAAAP//fz9lJyWzAAAAAP//fz9lJyWzAAAAAAAAgD/09VEyAAAAAAAAgD/09VEyAAAAAAAAgD/09VEyAAAAAAAAgD/09VEyAAAAAAAAgD+o4qgyAAAAAAAAgD+o4qgyAAAAAAAAgD+o4qgyAAAAAAAAgD+o4qgyAAAAAAAAgD/19VEyAAAAAAAAgD/19VEyAAAAAAAAgD/19VEyAAAAAAAAgD/19VEyAACAP24Emz4AAIA/AAAAAN8faT8AAAAA3x9pP24Emz4AAIA/fFgCPwAAgD9uBJs+3x9pP24Emz7fH2k/fFgCPwAAgD8AAIA/AACAP3xYAj/fH2k/fFgCP98faT8AAIA/RJyoPQAAgD9EnKg9fFgCPwAAAAB8WAI/AAAAAAAAgD9EnKg9fFgCP0ScqD1uBJs+AAAAAG4Emz4AAAAAfFgCP0ScqD1uBJs+RJyoPQAAAAAAAAAAAAAAAAAAAABuBJs+3x9pPwAAgD/fH2k/fFgCP0ScqD18WAI/RJyoPQAAgD/fH2k/bgSbPt8faT8AAAAARJyoPQAAAABEnKg9bgSbPgAAAQACAAAAAgADAAQABQAGAAQABgAHAAgACQAKAAgACgALAAwADQAOAAwADgAPABAAEQASABAAEgATABQAFQAWABQAFgAXABgAGQAaABgAGgAbABwAHQAeABwAHgAfAA=="
         }
     ]
 }

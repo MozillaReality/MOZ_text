@@ -1,8 +1,9 @@
 import * as THREE from 'three';
+import {OrbitControls} from './node_modules/three/examples/jsm/controls/OrbitControls.js'
 
 import {GLTFLoader} from "./GLTFLoader.module.js";
 
-var scene, camera, renderer, model;
+var scene, camera, renderer, model, controls;
 
 window.onload = () => { init() };
 
@@ -21,16 +22,26 @@ function init(){
 
   model = new GLTFLoader().load('basic.gltf', gltf => {
     scene.add(gltf.scene);
-    const t = gltf.scene.getObjectByName('Text');
-    //t.position.z = 0.2;
+    var t = gltf.scene.getObjectByName('Text');
     const origin = new THREE.SphereGeometry(0.03);
     t.add(new THREE.Mesh(origin));
+
+    if (t) t.rotation.x = 0;
+    t = gltf.scene.getObjectByName('Text001');
+    if (t) t.rotation.x = 0;
+    t = gltf.scene.getObjectByName('Text002');
+    if (t) t.rotation.x = 0;
+    t = gltf.scene.getObjectByName('Text003');
+    if (t) t.rotation.x = 0;
+    t = gltf.scene.getObjectByName('Text004');
+    if (t) t.rotation.x = 0;
   });
 
+  controls = new OrbitControls(camera, renderer.domElement);
 }
 
 function renderLoop(t){
+  controls.update();
   renderer.render(scene, camera);
-  ///camera.position.set(Math.sin(t * 0.001) * 10, 4, Math.cos(t * 0.001) * 10)
   camera.lookAt(0, 0, 0);
 }

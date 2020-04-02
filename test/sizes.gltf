@@ -1,0 +1,199 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.1.45",
+        "version" : "2.0"
+    },
+    "extensionsUsed" : [
+        "MOZ_text"
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                3,
+                4
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "extensions" : {
+                "MOZ_text" : {
+                    "index" : 0,
+                    "type" : "sdf",
+                    "alignX" : "left",
+                    "alignY" : "center",
+                    "offsetX" : 0,
+                    "offsetY" : 0,
+                    "value" : "0123456789abcdefghijklmnopqrstuvwxyz",
+                    "fontName" : "ArialMT",
+                    "fontFile" : "Arial.ttf",
+                    "size" : 1,
+                    "letterSpacing" : 0,
+                    "lineSpacing" : 1,
+                    "color" : [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ]
+                }
+            },
+            "name" : "Text",
+            "rotation" : [
+                0.7071067690849304,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "translation" : [
+                -8.981712341308594,
+                0.5188339948654175,
+                0.22439903020858765
+            ]
+        },
+        {
+            "extensions" : {
+                "MOZ_text" : {
+                    "index" : 1,
+                    "type" : "sdf",
+                    "alignX" : "left",
+                    "alignY" : "center",
+                    "offsetX" : 0,
+                    "offsetY" : 0,
+                    "value" : "0123456789abcdefghijklmnopqrstuvwxyz",
+                    "fontName" : "ArialMT",
+                    "fontFile" : "Arial.ttf",
+                    "size" : 0.5,
+                    "letterSpacing" : 0,
+                    "lineSpacing" : 1,
+                    "color" : [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ]
+                }
+            },
+            "name" : "Text.001",
+            "rotation" : [
+                0.7071067690849304,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "translation" : [
+                -8.981712341308594,
+                1.974169135093689,
+                0.22439885139465332
+            ]
+        },
+        {
+            "extensions" : {
+                "MOZ_text" : {
+                    "index" : 2,
+                    "type" : "sdf",
+                    "alignX" : "left",
+                    "alignY" : "center",
+                    "offsetX" : 0,
+                    "offsetY" : 0,
+                    "value" : "0123456789abcdefghijklmnopqrstuvwxyz",
+                    "fontName" : "ArialMT",
+                    "fontFile" : "Arial.ttf",
+                    "size" : 0.75,
+                    "letterSpacing" : 0,
+                    "lineSpacing" : 1,
+                    "color" : [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ]
+                }
+            },
+            "name" : "Text.002",
+            "rotation" : [
+                0.7071067690849304,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "translation" : [
+                -8.981712341308594,
+                1.3232488632202148,
+                0.2243989109992981
+            ]
+        },
+        {
+            "extensions" : {
+                "MOZ_text" : {
+                    "index" : 3,
+                    "type" : "sdf",
+                    "alignX" : "left",
+                    "alignY" : "center",
+                    "offsetX" : 0,
+                    "offsetY" : 0,
+                    "value" : "0123456789abcdefghijklmnopqrstuvwxyz",
+                    "fontName" : "ArialMT",
+                    "fontFile" : "Arial.ttf",
+                    "size" : 1.25,
+                    "letterSpacing" : 0,
+                    "lineSpacing" : 1,
+                    "color" : [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ]
+                }
+            },
+            "name" : "Text.003",
+            "rotation" : [
+                0.7071067690849304,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "translation" : [
+                -8.981712341308594,
+                -0.38100188970565796,
+                0.22439908981323242
+            ]
+        },
+        {
+            "extensions" : {
+                "MOZ_text" : {
+                    "index" : 4,
+                    "type" : "sdf",
+                    "alignX" : "left",
+                    "alignY" : "center",
+                    "offsetX" : 0,
+                    "offsetY" : 0,
+                    "value" : "0123456789abcdefghijklmnopqrstuvwxyz",
+                    "fontName" : "ArialMT",
+                    "fontFile" : "Arial.ttf",
+                    "size" : 1.5,
+                    "letterSpacing" : 0,
+                    "lineSpacing" : 1,
+                    "color" : [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ]
+                }
+            },
+            "name" : "Text.004",
+            "rotation" : [
+                0.7071067690849304,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "translation" : [
+                -8.981712341308594,
+                -1.4793606996536255,
+                0.22439932823181152
+            ]
+        }
+    ]
+}

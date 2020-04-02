@@ -1078,10 +1078,10 @@ var GLTFLoader = ( function () {
         const node = new TextMesh();
         node.text = text.value;
         node.font = text.fontFile;
-        node.fontSize = text.size / 1.5;
+        node.fontSize = text.size / 1.4;
         node.textAlign = text.alignX;
-        node.lineHeight = text.lineSpacing * 1.5;
-        node.letterSpacing = text.letterSpacing * 0.76;
+        node.lineHeight = text.lineSpacing * 1.3;
+        node.letterSpacing = text.letterSpacing * 0.66;
         node.anchor = anchor;
         node.color = new Color( text.color[0], text.color[1], text.color[2] );
         node.sync()
