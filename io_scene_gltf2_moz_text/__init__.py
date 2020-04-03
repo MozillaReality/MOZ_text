@@ -121,26 +121,30 @@ class glTF2ExportUserExtension:
         if not blender_object.type == 'FONT':
             return
 
-        # rotate text 90 deg to match three's orientation
-        print("applying rotation " + str(blender_object.rotation_euler.x))
-        blender_object.rotation_euler.rotate_axis('X', -1.5707963267948966)
-        blender_object.undoGLTFExportRotation = True
+        blender_object.undoExportActions = True
 
         ext_data = dict()
         ext_data['index'] = self.text_index
         ext_data['type'] = blender_object.text_type.lower()
         ext_data['alignX'] = blender_object.data.align_x.lower()
         ext_data['alignY'] = blender_object.data.align_y.lower()
-        ext_data['offsetX'] = blender_object.data.offset_x
-        ext_data['offsetY'] = blender_object.data.offset_y
         ext_data['value'] = blender_object.data.body
         ext_data['fontName'] = blender_object.data.font.name # postscript name
         ext_data['fontFile'] = blender_object.data.font.filepath.split(path.sep).pop()
         ext_data['size'] = blender_object.data.size
+        ext_data['maxWidth'] = blender_object.data.text_boxes[0].width
+        ext_data['overflow'] = blender_object.data.overflow
         ext_data['letterSpacing'] = blender_object.data.space_character - 1
         ext_data['lineSpacing'] = blender_object.data.space_line
-        color = blender_object.active_material.node_tree.nodes["Principled BSDF"].inputs[0].default_value
+
+        renderEngine = 'CYCLES' if bpy.context.scene.render.engine == 'CYCLES' else 'EEVEE'
+        material = blender_object.active_material
+        if material.use_nodes:
+            color = material.node_tree.get_output_node(renderEngine).inputs[0].links[0].from_node.inputs[0].default_value
+        else:
+            color = material.diffuse_color
         ext_data['color'] = [color[0], color[1], color[2]]
+
         self.text_index += 1
 
         if self.properties.enabled:
@@ -185,19 +189,15 @@ class AdditionalTextPropertiesPanel(bpy.types.Panel):
 
 # undo rotations
 
-bpy.types.Object.undoGLTFExportRotation = bpy.props.BoolProperty(
-    name = "UndoRotation",
-    description = "whether undoing rotation made during glTF export is needed",
+bpy.types.Object.undoExportActions = bpy.props.BoolProperty(
+    name = "undoExportActions",
+    description = "whether undoing modifications made during glTF export is needed",
     default = False
 )
 
 @persistent
 def afterExport(scene):
   for obj in bpy.data.objects:
-    if not obj.type == 'FONT' or not obj.undoGLTFExportRotation: continue
-    print("rotation " + str(obj.rotation_euler.x))
-    obj.rotation_euler.rotate_axis('X', 1.5707963267948966)
-    obj.undoGLTFExportRotation = False
-    print("undo rotation " + str(obj.rotation_euler.x))
-    print("\n")
+    if not obj.type == 'FONT' or not obj.undoExportActions: continue
+    obj.undoExportActions = False
 

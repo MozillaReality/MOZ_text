@@ -1,0 +1,277 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.1.45",
+        "version" : "2.0"
+    },
+    "extensionsUsed" : [
+        "MOZ_text",
+        "KHR_materials_unlit"
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                3,
+                4
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "extensions" : {
+                "MOZ_text" : {
+                    "index" : 0,
+                    "type" : "sdf",
+                    "alignX" : "left",
+                    "alignY" : "center",
+                    "value" : "No wrap:\nTo be, or not to be, that is the question",
+                    "fontName" : "ArialMT",
+                    "fontFile" : "Arial.ttf",
+                    "size" : 1,
+                    "maxWidth" : 0,
+                    "overflow" : "NONE",
+                    "letterSpacing" : 0,
+                    "lineSpacing" : 1,
+                    "color" : [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            },
+            "name" : "Text",
+            "rotation" : [
+                0.7071067690849304,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "translation" : [
+                -7.937744140625,
+                4.8026323318481445,
+                0
+            ]
+        },
+        {
+            "extensions" : {
+                "MOZ_text" : {
+                    "index" : 1,
+                    "type" : "sdf",
+                    "alignX" : "left",
+                    "alignY" : "top",
+                    "value" : "Overflow:\nTo be, or not to be, that is the question",
+                    "fontName" : "ArialMT",
+                    "fontFile" : "Arial.ttf",
+                    "size" : 1,
+                    "maxWidth" : 5,
+                    "overflow" : "NONE",
+                    "letterSpacing" : 0,
+                    "lineSpacing" : 1,
+                    "color" : [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            },
+            "name" : "Text.001",
+            "rotation" : [
+                0.7071067690849304,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "translation" : [
+                -8.024392127990723,
+                2.1087992191314697,
+                0
+            ]
+        },
+        {
+            "extensions" : {
+                "MOZ_text" : {
+                    "index" : 2,
+                    "type" : "sdf",
+                    "alignX" : "left",
+                    "alignY" : "top",
+                    "value" : "Scale to Fit:\nTo be, or not to be, that is the question",
+                    "fontName" : "ArialMT",
+                    "fontFile" : "Arial.ttf",
+                    "size" : 1,
+                    "maxWidth" : 5,
+                    "overflow" : "SCALE",
+                    "letterSpacing" : 0,
+                    "lineSpacing" : 1,
+                    "color" : [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            },
+            "name" : "Text.002",
+            "rotation" : [
+                0.7071067690849304,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "translation" : [
+                -2.0540249347686768,
+                2.1087992191314697,
+                0
+            ]
+        },
+        {
+            "extensions" : {
+                "MOZ_text" : {
+                    "index" : 3,
+                    "type" : "sdf",
+                    "alignX" : "left",
+                    "alignY" : "top",
+                    "value" : "Truncate:\nTo be, or not to be, that is the question",
+                    "fontName" : "ArialMT",
+                    "fontFile" : "Arial.ttf",
+                    "size" : 1,
+                    "maxWidth" : 5,
+                    "overflow" : "TRUNCATE",
+                    "letterSpacing" : 0,
+                    "lineSpacing" : 1,
+                    "color" : [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            },
+            "name" : "Text.003",
+            "rotation" : [
+                0.7071067690849304,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "translation" : [
+                3.6424720287323,
+                2.1087992191314697,
+                0
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Plane",
+            "rotation" : [
+                0.7071067690849304,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "translation" : [
+                0,
+                3.532923460006714,
+                0
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "extensions" : {
+                "KHR_materials_unlit" : {}
+            },
+            "name" : "Material.002",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.18731386959552765,
+                    0.18731386959552765,
+                    0.18731386959552765,
+                    1
+                ]
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Plane",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 4,
+            "max" : [
+                7.998596668243408,
+                5.67506390325434e-07,
+                0.4817476272583008
+            ],
+            "min" : [
+                -7.998596668243408,
+                -5.67506390325434e-07,
+                -0.4817471504211426
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 4,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 4,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 6,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 48,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 48,
+            "byteOffset" : 48
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 32,
+            "byteOffset" : 96
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 12,
+            "byteOffset" : 128
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 140,
+            "uri" : "data:application/octet-stream;base64,gfT/QL5WGDWgp/Y+gfT/QL5WGLWQp/a+gfT/wL5WGLWQp/a+gfT/wL5WGDWgp/Y+AAAAAAAAgD9XHJ61AAAAAAAAgD9XHJ61AAAAAAAAgD9XHJ61AAAAAAAAgD9XHJ61AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAEAAgAAAAIAAwA="
+        }
+    ]
+}

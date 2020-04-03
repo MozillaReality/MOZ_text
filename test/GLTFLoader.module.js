@@ -1076,14 +1076,19 @@ var GLTFLoader = ( function () {
           anchor[1] = 1 / numLines;
         }
         const node = new TextMesh();
+        node.orientation = '+x-z';
         node.text = text.value;
-        node.font = text.fontFile;
+        if (text.fontFile !== '<builtin>') {
+          node.font = text.fontFile;
+        }
         node.fontSize = text.size / 1.4;
         node.textAlign = text.alignX;
         node.lineHeight = text.lineSpacing * 1.3;
         node.letterSpacing = text.letterSpacing * 0.66;
         node.anchor = anchor;
-        node.color = new Color( text.color[0], text.color[1], text.color[2] );
+        node.maxWidth = text.maxWidth === 0 ? Infinity : text.maxWidth;
+        node.whiteSpace = node.maxWidth === Infinity ? 'nowrap' : 'normal';
+        node.color = new Color(text.color[0], text.color[1], text.color[2]);
         node.sync()
 
         return Promise.resolve( node );
