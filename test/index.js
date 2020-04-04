@@ -24,6 +24,7 @@ function init(){
     scene.add(gltf.scene);
     for (var i = 0; i < gltf.scene.children.length; i++){
       var t = gltf.scene.children[i];
+
       const origin = new THREE.SphereGeometry(0.03);
       t.add(new THREE.Mesh(origin));
     }

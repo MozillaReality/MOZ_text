@@ -26,6 +26,12 @@
                 "MOZ_text" : {
                     "index" : 0,
                     "type" : "sdf",
+                    "color" : [
+                        1.0,
+                        0.03464437648653984,
+                        0.05324694514274597,
+                        1.0
+                    ],
                     "alignX" : "left",
                     "alignY" : "center",
                     "value" : "COLOR",
@@ -35,12 +41,7 @@
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 0,
-                    "lineSpacing" : 1,
-                    "color" : [
-                        0.9471123814582825,
-                        0.22542135417461395,
-                        1
-                    ]
+                    "lineSpacing" : 1
                 }
             },
             "name" : "Text.001",
@@ -61,6 +62,12 @@
                 "MOZ_text" : {
                     "index" : 1,
                     "type" : "sdf",
+                    "color" : [
+                        0.8701687455177307,
+                        0.39381399750709534,
+                        1.0,
+                        0.3928571939468384
+                    ],
                     "alignX" : "left",
                     "alignY" : "center",
                     "value" : "COLOR",
@@ -70,12 +77,7 @@
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 0,
-                    "lineSpacing" : 1,
-                    "color" : [
-                        1,
-                        0.007647033780813217,
-                        0.9339576959609985
-                    ]
+                    "lineSpacing" : 1
                 }
             },
             "name" : "Text.002",
@@ -86,9 +88,9 @@
                 0.7071068286895752
             ],
             "translation" : [
-                -2.0110862255096436,
-                0.0032998323440551758,
-                0
+                -2.4542407989501953,
+                0.9424885511398315,
+                0.42147189378738403
             ]
         },
         {
@@ -96,6 +98,12 @@
                 "MOZ_text" : {
                     "index" : 2,
                     "type" : "sdf",
+                    "color" : [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
                     "alignX" : "left",
                     "alignY" : "center",
                     "value" : "COLOR",
@@ -105,12 +113,7 @@
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 0,
-                    "lineSpacing" : 1,
-                    "color" : [
-                        0.8000000715255737,
-                        0.2563748359680176,
-                        0
-                    ]
+                    "lineSpacing" : 1
                 }
             },
             "name" : "Text.003",
@@ -131,6 +134,12 @@
                 "MOZ_text" : {
                     "index" : 3,
                     "type" : "sdf",
+                    "color" : [
+                        0.034146249294281006,
+                        0.13781720399856567,
+                        1.0,
+                        1.0
+                    ],
                     "alignX" : "left",
                     "alignY" : "center",
                     "value" : "COLOR",
@@ -140,12 +149,7 @@
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 0,
-                    "lineSpacing" : 1,
-                    "color" : [
-                        0.800000011920929,
-                        0.800000011920929,
-                        0.800000011920929
-                    ]
+                    "lineSpacing" : 1
                 }
             },
             "name" : "Text.004",
@@ -166,6 +170,12 @@
                 "MOZ_text" : {
                     "index" : 4,
                     "type" : "sdf",
+                    "color" : [
+                        1.0,
+                        0.010420072823762894,
+                        0.0,
+                        1.0
+                    ],
                     "alignX" : "left",
                     "alignY" : "center",
                     "value" : "COLOR",
@@ -175,12 +185,7 @@
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 0,
-                    "lineSpacing" : 1,
-                    "color" : [
-                        0.800000011920929,
-                        0.800000011920929,
-                        0.800000011920929
-                    ]
+                    "lineSpacing" : 1
                 }
             },
             "name" : "Text.005",
@@ -201,6 +206,12 @@
                 "MOZ_text" : {
                     "index" : 5,
                     "type" : "sdf",
+                    "color" : [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
                     "alignX" : "left",
                     "alignY" : "center",
                     "value" : "COLOR",
@@ -210,12 +221,7 @@
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 0,
-                    "lineSpacing" : 1,
-                    "color" : [
-                        0.800000011920929,
-                        0.800000011920929,
-                        0.800000011920929
-                    ]
+                    "lineSpacing" : 1
                 }
             },
             "name" : "Text.006",

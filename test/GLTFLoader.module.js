@@ -1088,8 +1088,13 @@ var GLTFLoader = ( function () {
         node.anchor = anchor;
         node.maxWidth = text.maxWidth === 0 ? Infinity : text.maxWidth;
         node.whiteSpace = node.maxWidth === Infinity ? 'nowrap' : 'normal';
-        node.color = new Color(text.color[0], text.color[1], text.color[2]);
+        node.material = new MeshBasicMaterial({
+          color: new Color(text.color[0], text.color[1], text.color[2]),
+          transparent: text.color[3] < 1,
+          opacity: text.color[3]
+          });
         node.sync()
+        console.log(node);
 
         return Promise.resolve( node );
       }

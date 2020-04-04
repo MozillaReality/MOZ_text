@@ -121,29 +121,32 @@ class glTF2ExportUserExtension:
         if not blender_object.type == 'FONT':
             return
 
-        blender_object.undoExportActions = True
+        o = blender_object
+
+        o.undoExportActions = True
 
         ext_data = dict()
         ext_data['index'] = self.text_index
-        ext_data['type'] = blender_object.text_type.lower()
-        ext_data['alignX'] = blender_object.data.align_x.lower()
-        ext_data['alignY'] = blender_object.data.align_y.lower()
-        ext_data['value'] = blender_object.data.body
-        ext_data['fontName'] = blender_object.data.font.name # postscript name
-        ext_data['fontFile'] = blender_object.data.font.filepath.split(path.sep).pop()
-        ext_data['size'] = blender_object.data.size
-        ext_data['maxWidth'] = blender_object.data.text_boxes[0].width
-        ext_data['overflow'] = blender_object.data.overflow
-        ext_data['letterSpacing'] = blender_object.data.space_character - 1
-        ext_data['lineSpacing'] = blender_object.data.space_line
+        ext_data['type'] = o.text_type.lower()
+        ext_data['color'] = (o.text_color[0], o.text_color[1], o.text_color[2], o.text_color[3])
+        ext_data['alignX'] = o.data.align_x.lower()
+        ext_data['alignY'] = o.data.align_y.lower()
+        ext_data['value'] = o.data.body
+        ext_data['fontName'] = o.data.font.name # postscript name
+        ext_data['fontFile'] = o.data.font.filepath.split(path.sep).pop()
+        ext_data['size'] = o.data.size
+        ext_data['maxWidth'] = o.data.text_boxes[0].width
+        ext_data['overflow'] = o.data.overflow
+        ext_data['letterSpacing'] = o.data.space_character - 1
+        ext_data['lineSpacing'] = o.data.space_line
 
-        renderEngine = 'CYCLES' if bpy.context.scene.render.engine == 'CYCLES' else 'EEVEE'
-        material = blender_object.active_material
-        if material.use_nodes:
-            color = material.node_tree.get_output_node(renderEngine).inputs[0].links[0].from_node.inputs[0].default_value
-        else:
-            color = material.diffuse_color
-        ext_data['color'] = [color[0], color[1], color[2]]
+#        renderEngine = 'CYCLES' if bpy.context.scene.render.engine == 'CYCLES' else 'EEVEE'
+#        material = o.active_material
+#        if material.use_nodes:
+#            color = material.node_tree.get_output_node(renderEngine).inputs[0].links[0].from_node.inputs[0].default_value
+#        else:
+#            color = material.diffuse_color
+#        ext_data['color'] = [color[0], color[1], color[2]]
 
         self.text_index += 1
 
@@ -169,6 +172,16 @@ bpy.types.Object.text_type = bpy.props.EnumProperty(
     default = 'SDF',
 )
 
+bpy.types.Object.text_color = bpy.props.FloatVectorProperty(
+    name = "Text Color",
+    description = "Text color",
+    default = (1.0, 1.0, 1.0, 1.0),
+    size = 4,
+    min = 0,
+    max = 1,
+    subtype = 'COLOR'
+)
+
 
 class AdditionalTextPropertiesPanel(bpy.types.Panel):
     """Creates a Panel in the data properties window"""
@@ -186,8 +199,9 @@ class AdditionalTextPropertiesPanel(bpy.types.Panel):
 
         row = layout.row()
         row.prop(obj, "text_type")
+        row = layout.row()
+        row.prop(obj, "text_color")
 
-# undo rotations
 
 bpy.types.Object.undoExportActions = bpy.props.BoolProperty(
     name = "undoExportActions",
