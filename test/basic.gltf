@@ -24,21 +24,31 @@
                 "MOZ_text" : {
                     "index" : 0,
                     "type" : "sdf",
+                    "color" : [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
                     "alignX" : "center",
                     "alignY" : "center",
-                    "offsetX" : 0,
-                    "offsetY" : 0,
                     "value" : "Lorem\nIPSUM",
                     "fontName" : "Impact",
                     "fontFile" : "Impact.ttf",
                     "size" : 1.247999906539917,
+                    "maxWidth" : 0,
+                    "overflow" : "NONE",
                     "letterSpacing" : 0.10000002384185791,
                     "lineSpacing" : 0.7000000476837158,
-                    "color" : [
-                        0.8000000715255737,
-                        0.19215862452983856,
-                        0.17269723117351532
-                    ]
+                    "dimensions" : [
+                        2.321873664855957,
+                        1.5457876920700073
+                    ],
+                    "extrude" : 0,
+                    "extrudeResolution" : 12,
+                    "bevel" : 0,
+                    "bevelOffset" : 0,
+                    "bevelResolution" : 4
                 }
             },
             "name" : "Text",
@@ -69,21 +79,31 @@
                 "MOZ_text" : {
                     "index" : 1,
                     "type" : "sdf",
+                    "color" : [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
                     "alignX" : "center",
                     "alignY" : "center",
-                    "offsetX" : 0,
-                    "offsetY" : 0,
                     "value" : "Lorem\nIPSUM",
                     "fontName" : "Georgia",
                     "fontFile" : "Georgia.ttf",
                     "size" : 1,
+                    "maxWidth" : 0,
+                    "overflow" : "NONE",
                     "letterSpacing" : -0.10000002384185791,
                     "lineSpacing" : 1.0000001192092896,
-                    "color" : [
-                        0.8000000715255737,
-                        0.19215862452983856,
-                        0.17269723117351532
-                    ]
+                    "dimensions" : [
+                        2.0934090614318848,
+                        1.5148831605911255
+                    ],
+                    "extrude" : 0,
+                    "extrudeResolution" : 12,
+                    "bevel" : 0,
+                    "bevelOffset" : 0,
+                    "bevelResolution" : 4
                 }
             },
             "name" : "Text.001",
@@ -104,21 +124,31 @@
                 "MOZ_text" : {
                     "index" : 2,
                     "type" : "sdf",
+                    "color" : [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
                     "alignX" : "center",
                     "alignY" : "center",
-                    "offsetX" : 0,
-                    "offsetY" : 0,
                     "value" : "Lorem\nIPSUM",
                     "fontName" : "ArialMT",
                     "fontFile" : "Arial.ttf",
                     "size" : 1,
+                    "maxWidth" : 0,
+                    "overflow" : "NONE",
                     "letterSpacing" : 1.3999998569488525,
                     "lineSpacing" : 0.5,
-                    "color" : [
-                        0.8000000715255737,
-                        0.19215862452983856,
-                        0.17269723117351532
-                    ]
+                    "dimensions" : [
+                        5.053210735321045,
+                        1.0471558570861816
+                    ],
+                    "extrude" : 0,
+                    "extrudeResolution" : 12,
+                    "bevel" : 0,
+                    "bevelOffset" : 0,
+                    "bevelResolution" : 4
                 }
             },
             "name" : "Text.002",

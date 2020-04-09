@@ -139,6 +139,14 @@ class glTF2ExportUserExtension:
         ext_data['overflow'] = o.data.overflow
         ext_data['letterSpacing'] = o.data.space_character - 1
         ext_data['lineSpacing'] = o.data.space_line
+        ext_data['dimensions'] = (o.dimensions.x, o.dimensions.y)
+        # extrude/bevel
+        if ext_data['type'] == 'geometry':
+            ext_data['extrude'] = o.data.extrude
+            ext_data['extrudeResolution'] = o.data.resolution_u
+            ext_data['bevel'] = o.data.bevel_depth
+            ext_data['bevelOffset'] = o.data.offset
+            ext_data['bevelResolution'] = o.data.bevel_resolution
 
 #        renderEngine = 'CYCLES' if bpy.context.scene.render.engine == 'CYCLES' else 'EEVEE'
 #        material = o.active_material

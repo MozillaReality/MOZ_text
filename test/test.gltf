@@ -1,0 +1,60 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.1.45",
+        "version" : "2.0"
+    },
+    "extensionsUsed" : [
+        "MOZ_text"
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "extensions" : {
+                "MOZ_text" : {
+                    "index" : 0,
+                    "type" : "sdf",
+                    "color" : [
+                        1.0,
+                        0.12403301149606705,
+                        0.08535053580999374,
+                        1.0
+                    ],
+                    "alignX" : "left",
+                    "alignY" : "top_baseline",
+                    "value" : "hello",
+                    "fontName" : "ArialMT",
+                    "fontFile" : "Arial.ttf",
+                    "size" : 1,
+                    "maxWidth" : 0,
+                    "overflow" : "NONE",
+                    "letterSpacing" : 0,
+                    "lineSpacing" : 1,
+                    "dimensions" : [
+                        1.5104588270187378,
+                        0.5467889904975891
+                    ],
+                    "extrude" : 0,
+                    "extrudeResolution" : 12,
+                    "bevel" : 0,
+                    "bevelOffset" : 0,
+                    "bevelResolution" : 4
+                }
+            },
+            "name" : "Text",
+            "rotation" : [
+                0.7071067690849304,
+                0,
+                0,
+                0.7071068286895752
+            ]
+        }
+    ]
+}
