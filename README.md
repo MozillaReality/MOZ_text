@@ -24,11 +24,11 @@ This is meant to be used as follows:
 3. **Export**
 
     Export the scene (or selected objects) to glTF (`File > Export > glTF 2.0`), and find the extension general options at the end of the glTF options (see diagram below, 3).
-    
+
 4. **Add font files**
 
     Add the neccesary font files in your project folders. Use the same relative path as the one specified in the previous step.
-    
+
 5. **Load glTF**
 
     Use the custom GLTFLoader provided to load the glTF in threejs.
@@ -55,12 +55,12 @@ Inside the glTF, the extension is added to a node as "MOZ_text", with these para
         "maxWidth" : 0,
         "overflow" : "NONE",
         "letterSpacing" : 0,
-        "lineSpacing" : 0.5600000023841858,
+        "lineSpacing" : 0.56,
         "dimensions" : [9.7, 2.5],
-        "extrude" : 0.6399999260902405,
+        "extrude" : 0.63,
         "extrudeResolution" : 2,
-        "bevel" : 0.03999999165534973,
-        "bevelOffset" : -0.019999980926513672,
+        "bevel" : 0.039,
+        "bevelOffset" : -0.019,
         "bevelResolution" : 1
     }
 }
