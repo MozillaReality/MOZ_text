@@ -8,7 +8,7 @@ Currently only [threejs](https://github.com/mrdoob/three.js) is implemeted, temp
 
 The ultimate goal would be to have a perfect match between Blender (or other 3d package) and the render engine, but given the multiple differences of how text is handled in all the steps, this is far from being perfect right now. Instead of that, this project aims to a very practical approach: to have a useful tool that we can use today for simple use cases.
 
-For comparisons between Blender and threejs scenes, try the [test scene]() and compare it with the [blender scenes](https://github.com/feiss/MOZ_text/tree/master/test/blendfiles)
+For comparisons between Blender and threejs scenes, try the [test scene](https://mixedreality.mozilla.org/MOZ_text) and compare it with the [blender scenes](https://github.com/feiss/MOZ_text/tree/master/test/blendfiles)
 
 ## Workflow and usage
 
@@ -65,6 +65,16 @@ Inside the glTF, the extension is added to a node as "MOZ_text", with these para
     }
 }
 ```
+
+## How to run examples
+
+If you want to run https://mixedreality.mozilla.org/MOZ_text locally:
+
+1. clone repo
+2. `cd MOZ_text/test`
+3. `npm install`
+4. `npm run start`
+5. open `localhost:8080`
 
 ## Blender parameters support
 
