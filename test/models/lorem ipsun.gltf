@@ -1,0 +1,55 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.1.45",
+        "version" : "2.0"
+    },
+    "extensionsUsed" : [
+        "MOZ_text"
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "extensions" : {
+                "MOZ_text" : {
+                    "index" : 0,
+                    "type" : "sdf",
+                    "color" : [
+                        1.0,
+                        0.08084166049957275,
+                        0.03721405938267708,
+                        1.0
+                    ],
+                    "alignX" : "center",
+                    "alignY" : "center",
+                    "value" : "Lorem\nIpsun",
+                    "fontName" : "Impact",
+                    "fontFile" : "fonts/Impact.ttf",
+                    "size" : 1,
+                    "maxWidth" : 0,
+                    "overflow" : "NONE",
+                    "letterSpacing" : 0,
+                    "lineSpacing" : 1,
+                    "dimensions" : [
+                        1.6402738094329834,
+                        1.5891170501708984
+                    ]
+                }
+            },
+            "name" : "Text",
+            "rotation" : [
+                0.7071067690849304,
+                0,
+                0,
+                0.7071068286895752
+            ]
+        }
+    ]
+}

@@ -47,7 +47,8 @@ function init() {
       'basic',
       'lineheight',
       'overflow',
-      'types'
+      'types',
+      'lorem ipsun'
     ];
     this.ResetCamera = () => {
       camera1.position.set(0, 0, CAMERA_DISTANCE);
