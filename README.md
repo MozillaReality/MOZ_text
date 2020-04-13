@@ -72,5 +72,5 @@ In Blender, the MOZ_text panel under the text properties allows to specify how t
 
 Depending on `type`, these Blender text parameters are exported and used in the GLTFLoader:
 
-![blender params](/doc/blender_params.png)
+![blender params](/doc/blender_params.jpg)
 
