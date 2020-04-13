@@ -27,15 +27,10 @@ glTF_extension_name = "MOZ_text"
 extension_is_required = False
 
 class MOZTextProperties(bpy.types.PropertyGroup):
-    enabled: bpy.props.BoolProperty(
-        name=bl_info["name"],
-        description='Include this extension in the exported glTF file.',
-        default=True
-        )
-    float_property: bpy.props.FloatProperty(
-        name='Sample FloatProperty',
-        description='This is an example of a FloatProperty used by a UserExtension.',
-        default=1.0
+    font_path: bpy.props.StringProperty(
+        name='Font path',
+        description='Relative folder in your application to the font files.',
+        default='fonts/'
         )
 
 def register():
@@ -101,11 +96,8 @@ class GLTF_PT_UserExtensionPanel(bpy.types.Panel):
         props = bpy.context.scene.MOZTextProperties
         layout.active = props.enabled
 
-        box = layout.box()
-        box.label(text=glTF_extension_name)
-
         props = bpy.context.scene.MOZTextProperties
-        layout.prop(props, 'float_property', text="Some float value")
+        layout.prop(props, 'font_path')
 
 
 class glTF2ExportUserExtension:
@@ -125,6 +117,9 @@ class glTF2ExportUserExtension:
 
         o.undoExportActions = True
 
+        fontPath = bpy.context.scene.MOZTextProperties.font_path.strip()
+        if fontPath and fontPath[-1] != '/': fontPath += '/'
+
         ext_data = dict()
         ext_data['index'] = self.text_index
         ext_data['type'] = o.text_type.lower()
@@ -133,7 +128,7 @@ class glTF2ExportUserExtension:
         ext_data['alignY'] = o.data.align_y.lower()
         ext_data['value'] = o.data.body
         ext_data['fontName'] = o.data.font.name # postscript name
-        ext_data['fontFile'] = o.data.font.filepath.split(path.sep).pop()
+        ext_data['fontFile'] = fontPath + o.data.font.filepath.split(path.sep).pop()
         ext_data['size'] = o.data.size
         ext_data['maxWidth'] = o.data.text_boxes[0].width
         ext_data['overflow'] = o.data.overflow
