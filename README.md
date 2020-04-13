@@ -34,3 +34,43 @@ This is meant to be used as follows:
     Use the custom GLTFLoader provided to load the glTF in threejs.
 
 ![workflow diagram](/doc/moz_text_workflow.png)
+
+
+## Extension parameters
+
+Inside the glTF, the extension is added to a node as "MOZ_text", with these parameters:
+
+```json
+"extensions" : {
+    "MOZ_text" : {
+        "index" : 1,
+        "type" : "sdf | texture | geometry",
+        "color" : [1.0, 0.98, 1.0, 1.0],
+        "alignX" : "left",
+        "alignY" : "top",
+        "value" : "Lorem\nIpsun",
+        "fontName" : "Impact",
+        "fontFile" : "fonts/Impact.ttf",
+        "size" : 2,
+        "maxWidth" : 0,
+        "overflow" : "NONE",
+        "letterSpacing" : 0,
+        "lineSpacing" : 0.5600000023841858,
+        "dimensions" : [9.7, 2.5],
+        "extrude" : 0.6399999260902405,
+        "extrudeResolution" : 2,
+        "bevel" : 0.03999999165534973,
+        "bevelOffset" : -0.019999980926513672,
+        "bevelResolution" : 1
+    }
+}
+```
+
+## Feature support
+
+In Blender, the MOZ_text panel under the text properties allows to specify how the text should be rendered in the application. Current possible values are `SDF`, `Texture` or `Geometry`.
+
+Depending on `type`, these Blender text parameters are exported and used in the GLTFLoader:
+
+![blender params](/doc/blender_params.png)
+
