@@ -8,3 +8,5 @@ Currently only [threejs](https://github.com/mrdoob/three.js) is supported, uglil
 
 ## Workflow
 
+
+![workflow diagram](/doc/moz_text_workflow.png)
