@@ -66,11 +66,13 @@ Inside the glTF, the extension is added to a node as "MOZ_text", with these para
 }
 ```
 
-## Feature support
+## Blender parameters support
 
 In Blender, the MOZ_text panel under the text properties allows to specify how the text should be rendered in the application. Current possible values are `SDF`, `Texture` or `Geometry`.
 
-Depending on `type`, these Blender text parameters are exported and used in the GLTFLoader:
+Currently only these text parameters are exported:
 
 ![blender params](/doc/blender_params.jpg)
+
+Depending on `type`, some parameters are ignored. For example, bevel and extrude parameters are only used if text `type` is `geometry`.
 
