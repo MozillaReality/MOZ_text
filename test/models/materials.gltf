@@ -37,12 +37,16 @@
                     "alignY" : "center",
                     "value" : "COLOR",
                     "fontName" : "Impact",
-                    "fontFile" : "Impact.ttf",
+                    "fontFile" : "fonts/Impact.ttf",
                     "size" : 1,
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 0,
-                    "lineSpacing" : 1
+                    "lineSpacing" : 1,
+                    "dimensions" : [
+                        3.3999998569488525,
+                        0.7000000476837158
+                    ]
                 }
             },
             "name" : "Text.001",
@@ -73,12 +77,16 @@
                     "alignY" : "center",
                     "value" : "COLOR",
                     "fontName" : "Impact",
-                    "fontFile" : "Impact.ttf",
+                    "fontFile" : "fonts/Impact.ttf",
                     "size" : 1,
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 0,
-                    "lineSpacing" : 1
+                    "lineSpacing" : 1,
+                    "dimensions" : [
+                        3.3999998569488525,
+                        0.7000000476837158
+                    ]
                 }
             },
             "name" : "Text.002",
@@ -109,12 +117,16 @@
                     "alignY" : "center",
                     "value" : "COLOR",
                     "fontName" : "Impact",
-                    "fontFile" : "Impact.ttf",
+                    "fontFile" : "fonts/Impact.ttf",
                     "size" : 1,
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 0,
-                    "lineSpacing" : 1
+                    "lineSpacing" : 1,
+                    "dimensions" : [
+                        3.3999998569488525,
+                        0.7000000476837158
+                    ]
                 }
             },
             "name" : "Text.003",
@@ -145,12 +157,16 @@
                     "alignY" : "center",
                     "value" : "COLOR",
                     "fontName" : "Impact",
-                    "fontFile" : "Impact.ttf",
+                    "fontFile" : "fonts/Impact.ttf",
                     "size" : 1,
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 0,
-                    "lineSpacing" : 1
+                    "lineSpacing" : 1,
+                    "dimensions" : [
+                        3.3999998569488525,
+                        0.7000000476837158
+                    ]
                 }
             },
             "name" : "Text.004",
@@ -181,12 +197,16 @@
                     "alignY" : "center",
                     "value" : "COLOR",
                     "fontName" : "Impact",
-                    "fontFile" : "Impact.ttf",
+                    "fontFile" : "fonts/Impact.ttf",
                     "size" : 1,
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 0,
-                    "lineSpacing" : 1
+                    "lineSpacing" : 1,
+                    "dimensions" : [
+                        3.3999998569488525,
+                        0.7000000476837158
+                    ]
                 }
             },
             "name" : "Text.005",
@@ -217,12 +237,16 @@
                     "alignY" : "center",
                     "value" : "COLOR",
                     "fontName" : "Impact",
-                    "fontFile" : "Impact.ttf",
+                    "fontFile" : "fonts/Impact.ttf",
                     "size" : 1,
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 0,
-                    "lineSpacing" : 1
+                    "lineSpacing" : 1,
+                    "dimensions" : [
+                        3.3999998569488525,
+                        0.7000000476837158
+                    ]
                 }
             },
             "name" : "Text.006",
@@ -253,12 +277,16 @@
                     "alignY" : "center",
                     "value" : "TRANS\nPARENT",
                     "fontName" : "ArialMT",
-                    "fontFile" : "Arial.ttf",
+                    "fontFile" : "fonts/Arial.ttf",
                     "size" : 1,
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 0,
-                    "lineSpacing" : 0.6000000238418579
+                    "lineSpacing" : 0.6000000238418579,
+                    "dimensions" : [
+                        6.370627403259277,
+                        2.297982692718506
+                    ]
                 }
             },
             "name" : "Text.007",

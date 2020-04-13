@@ -26,20 +26,25 @@
                 "MOZ_text" : {
                     "index" : 0,
                     "type" : "sdf",
+                    "color" : [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
                     "alignX" : "left",
                     "alignY" : "center",
                     "value" : "No wrap:\nTo be, or not to be, that is the question",
                     "fontName" : "ArialMT",
-                    "fontFile" : "Arial.ttf",
+                    "fontFile" : "fonts/Arial.ttf",
                     "size" : 1,
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 0,
                     "lineSpacing" : 1,
-                    "color" : [
-                        1,
-                        1,
-                        1
+                    "dimensions" : [
+                        16.171001434326172,
+                        1.9119999408721924
                     ]
                 }
             },
@@ -61,20 +66,25 @@
                 "MOZ_text" : {
                     "index" : 1,
                     "type" : "sdf",
+                    "color" : [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
                     "alignX" : "left",
                     "alignY" : "top",
                     "value" : "Overflow:\nTo be, or not to be, that is the question",
                     "fontName" : "ArialMT",
-                    "fontFile" : "Arial.ttf",
+                    "fontFile" : "fonts/Arial.ttf",
                     "size" : 1,
                     "maxWidth" : 5,
                     "overflow" : "NONE",
                     "letterSpacing" : 0,
                     "lineSpacing" : 1,
-                    "color" : [
-                        1,
-                        1,
-                        1
+                    "dimensions" : [
+                        4.0450005531311035,
+                        4.921407222747803
                     ]
                 }
             },
@@ -96,20 +106,25 @@
                 "MOZ_text" : {
                     "index" : 2,
                     "type" : "sdf",
+                    "color" : [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
                     "alignX" : "left",
                     "alignY" : "top",
                     "value" : "Scale to Fit:\nTo be, or not to be, that is the question",
                     "fontName" : "ArialMT",
-                    "fontFile" : "Arial.ttf",
+                    "fontFile" : "fonts/Arial.ttf",
                     "size" : 1,
                     "maxWidth" : 5,
                     "overflow" : "SCALE",
                     "letterSpacing" : 0,
                     "lineSpacing" : 1,
-                    "color" : [
-                        1,
-                        1,
-                        1
+                    "dimensions" : [
+                        4.975997447967529,
+                        0.5911130905151367
                     ]
                 }
             },
@@ -131,20 +146,25 @@
                 "MOZ_text" : {
                     "index" : 3,
                     "type" : "sdf",
+                    "color" : [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
                     "alignX" : "left",
                     "alignY" : "top",
                     "value" : "Truncate:\nTo be, or not to be, that is the question",
                     "fontName" : "ArialMT",
-                    "fontFile" : "Arial.ttf",
+                    "fontFile" : "fonts/Arial.ttf",
                     "size" : 1,
                     "maxWidth" : 5,
                     "overflow" : "TRUNCATE",
                     "letterSpacing" : 0,
                     "lineSpacing" : 1,
-                    "color" : [
-                        1,
-                        1,
-                        1
+                    "dimensions" : [
+                        3.9640004634857178,
+                        2.799999952316284
                     ]
                 }
             },

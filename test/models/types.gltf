@@ -34,21 +34,16 @@
                     "alignY" : "center",
                     "value" : "SDF \nthis is a test",
                     "fontName" : "Impact",
-                    "fontFile" : "Impact.ttf",
+                    "fontFile" : "fonts/Impact.ttf",
                     "size" : 2,
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 0,
                     "lineSpacing" : 0.5,
                     "dimensions" : [
-                        6.591723442077637,
-                        2.0928640365600586
-                    ],
-                    "extrude" : 0,
-                    "extrudeResolution" : 12,
-                    "bevel" : 0,
-                    "bevelOffset" : 0,
-                    "bevelResolution" : 4
+                        9.66200065612793,
+                        2.4000000953674316
+                    ]
                 }
             },
             "name" : "Text",
@@ -79,15 +74,15 @@
                     "alignY" : "top",
                     "value" : "Geometry \nthis is a test",
                     "fontName" : "Impact",
-                    "fontFile" : "Impact.ttf",
+                    "fontFile" : "fonts/Impact.ttf",
                     "size" : 2,
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 0,
                     "lineSpacing" : 0.5600000023841858,
                     "dimensions" : [
-                        6.631723403930664,
-                        2.2531790733337402
+                        9.702001571655273,
+                        2.5611627101898193
                     ],
                     "extrude" : 0.6399999260902405,
                     "extrudeResolution" : 2,
@@ -124,21 +119,16 @@
                     "alignY" : "center",
                     "value" : "Texture \nthis is a test",
                     "fontName" : "Impact",
-                    "fontFile" : "Impact.ttf",
+                    "fontFile" : "fonts/Impact.ttf",
                     "size" : 2,
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 0,
                     "lineSpacing" : 0.5,
                     "dimensions" : [
-                        6.591723442077637,
-                        2.070707082748413
-                    ],
-                    "extrude" : 0,
-                    "extrudeResolution" : 12,
-                    "bevel" : 0,
-                    "bevelOffset" : 0,
-                    "bevelResolution" : 4
+                        9.66200065612793,
+                        2.381999969482422
+                    ]
                 }
             },
             "name" : "Text.001",

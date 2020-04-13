@@ -24,6 +24,7 @@
   "dependencies": {
     "@babel/core": "^7.9.0",
     "babel-loader": "^8.1.0",
+    "dat.gui": "^0.7.7",
     "three": "^0.115.0",
     "troika-3d-text": "^0.22.0",
     "webpack": "^4.42.1",

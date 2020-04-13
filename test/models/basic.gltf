@@ -34,21 +34,16 @@
                     "alignY" : "center",
                     "value" : "Lorem\nIPSUM",
                     "fontName" : "Impact",
-                    "fontFile" : "Impact.ttf",
+                    "fontFile" : "fonts/Impact.ttf",
                     "size" : 1.247999906539917,
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 0.10000002384185791,
                     "lineSpacing" : 0.7000000476837158,
                     "dimensions" : [
-                        2.321873664855957,
-                        1.5457876920700073
-                    ],
-                    "extrude" : 0,
-                    "extrudeResolution" : 12,
-                    "bevel" : 0,
-                    "bevelOffset" : 0,
-                    "bevelResolution" : 4
+                        3.4475998878479004,
+                        1.735967993736267
+                    ]
                 }
             },
             "name" : "Text",
@@ -89,21 +84,16 @@
                     "alignY" : "center",
                     "value" : "Lorem\nIPSUM",
                     "fontName" : "Georgia",
-                    "fontFile" : "Georgia.ttf",
+                    "fontFile" : "fonts/Georgia.ttf",
                     "size" : 1,
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : -0.10000002384185791,
                     "lineSpacing" : 1.0000001192092896,
                     "dimensions" : [
-                        2.0934090614318848,
-                        1.5148831605911255
-                    ],
-                    "extrude" : 0,
-                    "extrudeResolution" : 12,
-                    "bevel" : 0,
-                    "bevelOffset" : 0,
-                    "bevelResolution" : 4
+                        2.3625001907348633,
+                        1.69100022315979
+                    ]
                 }
             },
             "name" : "Text.001",
@@ -134,21 +124,16 @@
                     "alignY" : "center",
                     "value" : "Lorem\nIPSUM",
                     "fontName" : "ArialMT",
-                    "fontFile" : "Arial.ttf",
+                    "fontFile" : "fonts/Arial.ttf",
                     "size" : 1,
                     "maxWidth" : 0,
                     "overflow" : "NONE",
                     "letterSpacing" : 1.3999998569488525,
                     "lineSpacing" : 0.5,
                     "dimensions" : [
-                        5.053210735321045,
-                        1.0471558570861816
-                    ],
-                    "extrude" : 0,
-                    "extrudeResolution" : 12,
-                    "bevel" : 0,
-                    "bevelOffset" : 0,
-                    "bevelResolution" : 4
+                        5.362500190734863,
+                        1.190999984741211
+                    ]
                 }
             },
             "name" : "Text.002",

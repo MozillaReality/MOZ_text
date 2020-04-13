@@ -25,20 +25,25 @@
                 "MOZ_text" : {
                     "index" : 0,
                     "type" : "sdf",
+                    "color" : [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
                     "alignX" : "left",
                     "alignY" : "center",
-                    "offsetX" : 0,
-                    "offsetY" : 0,
                     "value" : "0123456789abcdefghijklmnopqrstuvwxyz",
                     "fontName" : "ArialMT",
-                    "fontFile" : "Arial.ttf",
+                    "fontFile" : "fonts/Arial.ttf",
                     "size" : 1,
+                    "maxWidth" : 0,
+                    "overflow" : "NONE",
                     "letterSpacing" : 0,
                     "lineSpacing" : 1,
-                    "color" : [
-                        0.800000011920929,
-                        0.800000011920929,
-                        0.800000011920929
+                    "dimensions" : [
+                        16.573999404907227,
+                        0.9214074611663818
                     ]
                 }
             },
@@ -50,8 +55,8 @@
                 0.7071068286895752
             ],
             "translation" : [
-                -7.698817253112793,
-                0.22439904510974884,
+                -8.981712341308594,
+                0.5188339948654175,
                 0.22439903020858765
             ]
         },
@@ -60,20 +65,25 @@
                 "MOZ_text" : {
                     "index" : 1,
                     "type" : "sdf",
+                    "color" : [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
                     "alignX" : "left",
                     "alignY" : "center",
-                    "offsetX" : 0,
-                    "offsetY" : 0,
                     "value" : "0123456789abcdefghijklmnopqrstuvwxyz",
                     "fontName" : "ArialMT",
-                    "fontFile" : "Arial.ttf",
-                    "size" : 1,
-                    "letterSpacing" : -0.5000000298023224,
+                    "fontFile" : "fonts/Arial.ttf",
+                    "size" : 0.5,
+                    "maxWidth" : 0,
+                    "overflow" : "NONE",
+                    "letterSpacing" : 0,
                     "lineSpacing" : 1,
-                    "color" : [
-                        0.800000011920929,
-                        0.800000011920929,
-                        0.800000011920929
+                    "dimensions" : [
+                        8.286999702453613,
+                        0.4607037305831909
                     ]
                 }
             },
@@ -85,9 +95,9 @@
                 0.7071068286895752
             ],
             "translation" : [
-                -7.698817253112793,
-                1.864822268486023,
-                0.22439903020858765
+                -8.981712341308594,
+                1.974169135093689,
+                0.22439885139465332
             ]
         },
         {
@@ -95,20 +105,25 @@
                 "MOZ_text" : {
                     "index" : 2,
                     "type" : "sdf",
+                    "color" : [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
                     "alignX" : "left",
                     "alignY" : "center",
-                    "offsetX" : 0,
-                    "offsetY" : 0,
                     "value" : "0123456789abcdefghijklmnopqrstuvwxyz",
                     "fontName" : "ArialMT",
-                    "fontFile" : "Arial.ttf",
-                    "size" : 1,
-                    "letterSpacing" : -0.25,
+                    "fontFile" : "fonts/Arial.ttf",
+                    "size" : 0.75,
+                    "maxWidth" : 0,
+                    "overflow" : "NONE",
+                    "letterSpacing" : 0,
                     "lineSpacing" : 1,
-                    "color" : [
-                        0.800000011920929,
-                        0.800000011920929,
-                        0.800000011920929
+                    "dimensions" : [
+                        12.430500030517578,
+                        0.6910556554794312
                     ]
                 }
             },
@@ -120,9 +135,9 @@
                 0.7071068286895752
             ],
             "translation" : [
-                -7.698817253112793,
-                1.0656417608261108,
-                0.22439903020858765
+                -8.981712341308594,
+                1.3232488632202148,
+                0.2243989109992981
             ]
         },
         {
@@ -130,20 +145,25 @@
                 "MOZ_text" : {
                     "index" : 3,
                     "type" : "sdf",
+                    "color" : [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
                     "alignX" : "left",
                     "alignY" : "center",
-                    "offsetX" : 0,
-                    "offsetY" : 0,
                     "value" : "0123456789abcdefghijklmnopqrstuvwxyz",
                     "fontName" : "ArialMT",
-                    "fontFile" : "Arial.ttf",
-                    "size" : 1,
-                    "letterSpacing" : 0.25,
+                    "fontFile" : "fonts/Arial.ttf",
+                    "size" : 1.25,
+                    "maxWidth" : 0,
+                    "overflow" : "NONE",
+                    "letterSpacing" : 0,
                     "lineSpacing" : 1,
-                    "color" : [
-                        0.800000011920929,
-                        0.800000011920929,
-                        0.800000011920929
+                    "dimensions" : [
+                        20.717500686645508,
+                        1.151759386062622
                     ]
                 }
             },
@@ -155,9 +175,9 @@
                 0.7071068286895752
             ],
             "translation" : [
-                -7.698817253112793,
-                -0.5958125591278076,
-                0.22439903020858765
+                -8.981712341308594,
+                -0.38100188970565796,
+                0.22439908981323242
             ]
         },
         {
@@ -165,20 +185,25 @@
                 "MOZ_text" : {
                     "index" : 4,
                     "type" : "sdf",
+                    "color" : [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
                     "alignX" : "left",
                     "alignY" : "center",
-                    "offsetX" : 0,
-                    "offsetY" : 0,
                     "value" : "0123456789abcdefghijklmnopqrstuvwxyz",
                     "fontName" : "ArialMT",
-                    "fontFile" : "Arial.ttf",
-                    "size" : 1,
-                    "letterSpacing" : 0.5,
+                    "fontFile" : "fonts/Arial.ttf",
+                    "size" : 1.5,
+                    "maxWidth" : 0,
+                    "overflow" : "NONE",
+                    "letterSpacing" : 0,
                     "lineSpacing" : 1,
-                    "color" : [
-                        0.800000011920929,
-                        0.800000011920929,
-                        0.800000011920929
+                    "dimensions" : [
+                        24.861000061035156,
+                        1.3821113109588623
                     ]
                 }
             },
@@ -190,9 +215,9 @@
                 0.7071068286895752
             ],
             "translation" : [
-                -7.698817253112793,
-                -1.416024088859558,
-                0.2243988960981369
+                -8.981712341308594,
+                -1.4793606996536255,
+                0.22439932823181152
             ]
         }
     ]
