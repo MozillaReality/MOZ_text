@@ -1,7 +1,8 @@
-import * as THREE from 'three';
+import * as THREE from './three.min.js';
 import {OrbitControls} from './node_modules/three/examples/jsm/controls/OrbitControls.js'
 
 import {GLTFLoader} from "./GLTFLoader.module.js";
+import {MOZ_textExtensionPlugin} from "./MOZ_textExtensionPlugin.js";
 import * as dat from 'dat.gui';
 
 const CAMERA_DISTANCE = 30;
@@ -77,7 +78,9 @@ function loadScene(file) {
   if (model) {
     scene.remove(model);
   }
-  new GLTFLoader().load(`models/${file}.gltf`, gltf => {
+  new GLTFLoader()
+    .register(parser => new MOZ_textExtensionPlugin(parser))
+    .load(`models/${file}.gltf`, gltf => {
     model = gltf.scene;
     scene.add(model);
     for (var i = 0; i < model.children.length; i++){
