@@ -19,26 +19,22 @@ export class MOZ_textExtensionPlugin{
     this.name = 'MOZ_text';
   }
 
-  loadMesh(meshIdx) {
+  loadNode(nodeIdx) {
     const parser = this.parser;
     const json = parser.json;
-    const nodeDef = json.nodes[meshIdx];
+    const nodeDef = json.nodes[nodeIdx];
     if (!nodeDef.extensions || !nodeDef.extensions[this.name]) {
       return null;
     }
     const extDef = nodeDef.extensions[this.name];
 
-    let mesh;
+    let node;
     switch(extDef.type) {
-      case 'sdf': mesh = this.createSDFText(extDef, nodeDef); break;
-      case 'texture': mesh = this.createTextureText(extDef, nodeDef); break;
-  //    case 'geometry': mesh = await this.createGeometryText(extDef, nodeDef); break;
+      case 'sdf': node = this.createSDFText(extDef, nodeDef); break;
+      case 'texture': node = this.createTextureText(extDef, nodeDef); break;
+  //    case 'geometry': node = await this.createGeometryText(extDef, nodeDef); break;
     }
-
-    console.log('mesh', meshIdx);
-    mesh = new THREE.Mesh(new THREE.BoxBufferGeometry(0.4, 0.4, 0.4));
-    mesh.position.x = Math.random()*3;
-    return Promise.resolve(mesh);
+    return Promise.resolve(node);
   }
 
   createSDFText(text, nodeDef) {
